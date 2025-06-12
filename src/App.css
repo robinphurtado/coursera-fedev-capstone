@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +34,59 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+
+.main-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding-right: 5rem;
+}
+
+.main-nav li{
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+}
+
+.main-header{
+  background-color: #495E57
+}
+
+.main-header p{
+  color: #f4ce14;
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+.main-footer ul{
+  list-style: none;
+
+}
+
+
+.main-footer p{
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+}
+
+.main-footer img{
+  height: 180px
 }
