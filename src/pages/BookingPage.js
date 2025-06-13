@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import BookingForm from '../components/BookingForm'
 
 const BookingPage = () => {
   return (
-    <div>BookingPage</div>
+    <>
+    <bookingpage className='booking-form'>
+    <BookingForm />
+    </bookingpage>
+    </>
   )
 }
 

@@ -1,4 +1,4 @@
-.App {
+.App{
   text-align: center;
 }
 .App-logo {
@@ -23,9 +23,9 @@
   color: white;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -44,8 +44,14 @@
   padding: 1rem 2rem;
 }
 
+.booking-form{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem 2rem;
+}
 
-.main-nav ul {
+.main-nav ul{
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
@@ -57,13 +63,19 @@
 .main-nav li{
   font-family: 'Karla', sans-serif;
   font-weight: 800;
+  color: black;
 }
 
-.main-header{
+.main-nav a:link, .main-nav a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.main-hero{
   background-color: #495E57
 }
 
-.main-header p{
+.main-hero p{
   color: #f4ce14;
 }
 
