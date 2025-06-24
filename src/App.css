@@ -49,6 +49,11 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: 1rem 2rem;
+  max-width: 300px;
+  gap: 5px;
+
+  /* Inline styling I moved and am not sure I need
+  style={{ display: 'grid', maxWidth: '200px', gap: '20px', padding: '20px'}} */
 }
 
 .main-nav ul{

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const BookingForm = () => {
+const BookingForm = ({availableTimes, dispatch}) => {
 
   const [formData, setFormData] = useState({
     date: '',
@@ -11,6 +11,12 @@ const BookingForm = () => {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
+
+   // If the date changes, trigger dispatch to update availableTimes
+    if (id === 'date') {
+      dispatch(value); // pass selected date to reducer
+    }
+
     setFormData((prev) => ({
       ...prev,
       [id]: value,
@@ -20,23 +26,21 @@ const BookingForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // You can replace this with actual logic later
+    // Later, connect to the API
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
+
+    <form onSubmit={handleSubmit} className="booking-form" >
       <label htmlFor="date">Choose date</label>
-      <input type="date" id="date" value={formData.date} onChange={handleChange} />
+      <input type="date" id="date" value={formData.date} onChange={handleChange}/>
 
       <label htmlFor="time">Choose time</label>
       <select id="time" value={formData.time} onChange={handleChange}>
         <option value="">--Select time--</option>
-        <option value="17:00">17:00</option>
-        <option value="18:00">18:00</option>
-        <option value="19:00">19:00</option>
-        <option value="20:00">20:00</option>
-        <option value="21:00">21:00</option>
-        <option value="22:00">22:00</option>
+        {availableTimes.map((time) => (
+          <option key={time} value={time}>{time}</option>
+        ))}
       </select>
 
       <label htmlFor="guests">Number of guests</label>
