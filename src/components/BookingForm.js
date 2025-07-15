@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const BookingForm = ({availableTimes, dispatch}) => {
+const BookingForm = ({availableTimes, updateTimes}) => {
 
   const [formData, setFormData] = useState({
     date: '',
@@ -14,7 +14,7 @@ const BookingForm = ({availableTimes, dispatch}) => {
 
    // If the date changes, trigger dispatch to update availableTimes
     if (id === 'date') {
-      dispatch(value); // pass selected date to reducer
+      updateTimes(value); // pass selected date to reducer
     }
 
     setFormData((prev) => ({
