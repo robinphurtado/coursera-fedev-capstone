@@ -33,10 +33,10 @@ const BookingForm = ({availableTimes, updateTimes}) => {
 
     <form onSubmit={handleSubmit} className="booking-form" >
       <label htmlFor="date">Choose date</label>
-      <input type="date" id="date" value={formData.date} onChange={handleChange}/>
+      <input type="date" id="date" value={formData.date} onChange={handleChange} required />
 
       <label htmlFor="time">Choose time</label>
-      <select id="time" value={formData.time} onChange={handleChange}>
+      <select id="time" value={formData.time} onChange={handleChange} required >
         <option value="">--Select time--</option>
         {availableTimes.map((time) => (
           <option key={time} value={time}>{time}</option>
@@ -50,7 +50,7 @@ const BookingForm = ({availableTimes, updateTimes}) => {
         min="1"
         max="10"
         value={formData.guests}
-        onChange={handleChange}
+        onChange={handleChange} required
       />
 
       <label htmlFor="occasion">Occasion</label>
