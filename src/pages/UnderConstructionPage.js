@@ -1,8 +1,12 @@
 import React from 'react'
+import App from '../App'
+// import '../App.css';
 
 const UnderConstructionPage = () => {
   return (
-    <div>UnderConstructionPage</div>
+    <section className='underconstruction'>
+      <h1>Under Construction</h1>
+    </section>
   )
 }
 

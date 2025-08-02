@@ -1,0 +1,29 @@
+.hero{
+    background-color: #495E57;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.hero-content-text p{
+    max-width: 29.5%;
+    padding-bottom: 2rem;
+}
+
+.hero-content-image img{
+  position: relative;
+  top: 2rem; /* makes the image “hang” below the background */
+  width: 286px;
+  height: 357px;
+  z-index: 1; /* keeps the image above the background */
+}
+
+.hero-primary-button{
+    color: #495E57;
+}

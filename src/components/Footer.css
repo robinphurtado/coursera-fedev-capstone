@@ -1,0 +1,45 @@
+
+*{
+    padding:0%;
+    margin: 0%;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    padding-top: 3rem;
+    padding-left: 15%;
+    /* grid-template-columns: auto 1fr 1fr 1fr; */
+    /* align-items: center; */
+    /* padding: 1rem 2rem; */
+    /* font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    max-width: 20%; */
+}
+
+.footer ul{
+    /* list-style: none; */
+      display: inline;
+
+}
+
+.footer p{
+  font-family: 'Karla', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 2rem;
+}
+
+.footer li{
+  font-weight: 100;
+}
+
+.footer img{
+  height: 180px
+}
+
+.link-section{
+    display:flex;
+    width: 70%;
+}

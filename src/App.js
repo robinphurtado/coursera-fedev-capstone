@@ -7,21 +7,20 @@ import Hero from './components/Hero';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import About from './pages/AboutPage';
-import Booking from './pages/BookingPage';
+// import Booking from './pages/BookingPage';
 import Home from './pages/HomePage';
 import UnderConstruction from './pages/UnderConstructionPage';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
-      <Nav/>
+       <Header/>
       <Hero/>
-      {/* <Main/> */}
+      <Main/>
         <Routes>
           <Route path= "/" element={<Home />} />
-          <Route path= "/about" element={<About />} />
-          <Route path= "/bookings" element={<Booking />} />
+          <Route path= "/about" element={<UnderConstruction />} />
+          {/* <Route path= "/bookings" element={<Booking />} /> */}
           <Route path= "/menu" element={<UnderConstruction />} />
           <Route path= "/orderOnline" element={<UnderConstruction />} />
           <Route path= "/login" element={<UnderConstruction />} />

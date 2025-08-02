@@ -1,0 +1,28 @@
+.main-primary-button{
+    color: #333333;
+    padding: 1rem 2rem;
+}
+
+.specials-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 7%;
+}
+
+.specials-header h2{
+    color: #333333;
+    font-weight: 400;
+
+}
+
+.specials-cards{
+    display: inline-flex;
+    margin-top: 3%;
+    margin-left: 15%;
+    /* margin-right: 10%; */
+    gap: 5%;
+}
+

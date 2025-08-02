@@ -1,109 +1,65 @@
-.App{
-  text-align: center;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+  border-radius: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.primary-button{
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  background-color: #F4CE14;
+  font-family: 'Karla', sans-serif;
+  color: black;
+  font-weight: bold;
+  border: 0.1875rem solid #F4CE14;
+  transition: background, border, color 0.5s;
+}
+
+h1{
+  color: #F4CE14;
+  font-family: Markazi-Text;
+  font-size: 300%;
+  margin: 0rem 0.1rem 0.1rem;
+}
+
+.underconstruction h1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2% auto;
 }
 
-/* .App-link {
-  color: #61dafb;
-} */
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  color: #edefee;
+  font-family: 'Markazi-Text';
+  font-size: 200%;
+  font-weight: 100;
+  margin-top: 0.1rem;
 
 }
 
-.main-nav {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 1rem 2rem;
+p{
+  color: #edefee;
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .booking-form{
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 1rem 2rem;
-  max-width: 300px;
+  /* padding: 1rem 2rem; */
+  padding: 5% 40%;
+  max-width: 50%;
   gap: 5px;
-
-  /* Inline styling I moved and am not sure I need
-  style={{ display: 'grid', maxWidth: '200px', gap: '20px', padding: '20px'}} */
 }
 
-.main-nav ul{
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding-right: 5rem;
-}
-
-.main-nav li{
-  font-family: 'Karla', sans-serif;
-  font-weight: 800;
-  color: black;
-}
-
-.main-nav a:link, .main-nav a:visited{
-  text-decoration: none;
-  color: black;
-}
-
-.main-hero{
-  background-color: #495E57
-}
-
-.main-hero p{
-  color: #f4ce14;
-}
-
-.main-footer {
-  display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
-  align-items: center;
-  padding: 1rem 2rem;
-  font-family: 'Karla', sans-serif;
-  font-weight: 400;
-}
-
-.main-footer ul{
-  list-style: none;
-
-}
-
-
-.main-footer p{
-  font-family: 'Karla', sans-serif;
-  font-weight: 600;
-}
-
-.main-footer img{
-  height: 180px
-}
